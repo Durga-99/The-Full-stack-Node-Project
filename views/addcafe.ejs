@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Cafe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar, .footer {
+            background-color: #343a40;
+        }
+        .navbar a, .footer p {
+            color: #ffffff;
+        }
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-container {
+            margin-top: 40px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .submit-btn {
+            font-size: 1.1em;
+            background-color: #007bff;
+            color: #ffffff;
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">The Black House</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Add Cafe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container form-container">
+        
+        <h1>The new cafe needs to be added!</h1>
+        <form action="/add" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="name">Cafe's Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter the cafe's name" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your number" required>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">Add a new cafe</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 text-center">
+        <div class="container">
+            <p>&copy; 2024 The Black House. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
